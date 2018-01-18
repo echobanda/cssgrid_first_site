@@ -1,17 +1,35 @@
 require('../main.scss')
 
-// ===== Scroll to Top ====
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('.return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('.return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
+
+document.addEventListener("DOMContentLoaded", function() {
+
+// menu opuszczane
+
+var menu = $('.header__left').find("#menu");
+var nav = $('.header__left').find("nav");
+var toggle = $('.header__left').find("#toggle");
+
+toggle.on('click',function(){
+  menu.slideToggle(function () {
+    menu.css("visibility", "visible");
+  });
+
 });
-$('.return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
+
+// animacja x
+
+  toggle.on('mouseover',function() {
+    toggle.find(".header__left--bar1").addClass("change_bar1");
+    toggle.find(".header__left--bar2").addClass("change_bar2");
+    toggle.find(".header__left--bar3").addClass("change_bar3");
+    })
+
+  toggle.on('mouseout',function() {
+    toggle.find(".header__left--bar1").removeClass("change_bar1");
+    toggle.find(".header__left--bar2").removeClass("change_bar2");
+    toggle.find(".header__left--bar3").removeClass("change_bar3");
+    });
+
 
 
 
