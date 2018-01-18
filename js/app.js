@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // menu opuszczane
 
-var menu = $('.header__left').find("#menu");
+var menu = $('.header__left').find(".header__menu");
 var nav = $('.header__left').find("nav");
 var toggle = $('.header__left').find("#toggle");
 
