@@ -19,15 +19,15 @@ toggle.on('click',function(){
 // animacja x
 
   toggle.on('mouseover',function() {
-    toggle.find(".header__left--bar1").addClass("change_bar1");
-    toggle.find(".header__left--bar2").addClass("change_bar2");
-    toggle.find(".header__left--bar3").addClass("change_bar3");
+    toggle.find(".header__left--bar1").addClass("change--bar1");
+    toggle.find(".header__left--bar2").addClass("change--bar2");
+    toggle.find(".header__left--bar3").addClass("change--bar3");
     })
 
   toggle.on('mouseout',function() {
-    toggle.find(".header__left--bar1").removeClass("change_bar1");
-    toggle.find(".header__left--bar2").removeClass("change_bar2");
-    toggle.find(".header__left--bar3").removeClass("change_bar3");
+    toggle.find(".header__left--bar1").removeClass("change--bar1");
+    toggle.find(".header__left--bar2").removeClass("change--bar2");
+    toggle.find(".header__left--bar3").removeClass("change--bar3");
     });
 
 
