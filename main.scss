@@ -299,7 +299,7 @@ footer {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 100px auto 80px;
-    height: 600px;
+    height: 500px;
     color: $white;
   }
 
@@ -311,7 +311,7 @@ footer {
       height: 100px;
       width: 80px;
       height: 80px;
-      font-size: 1rem;
+      font-size: 1.2em;
       color: $second;
       z-index: 10;
       position: fixed;
@@ -384,7 +384,7 @@ footer {
       top: 0;
       left: 0;
       color: $second;
-      width: 50%;
+      width: 100%;
       height: 100%;
       margin: auto;
       text-align: left;
@@ -393,11 +393,11 @@ footer {
       visibility: hidden;
       z-index: 2;
       position: fixed;
-      padding-left: 150px;
+      padding-left: 250px;
 
 
       a {
-        font-size: 2rem;
+        font-size: 2em;
         text-decoration: none;
         color: $primary;
       }
@@ -409,7 +409,7 @@ footer {
 
       .header__menu--logo {
         margin: 60px 0 20px 0;
-        font-size: 1.5rem;
+        font-size: 1.4em;
       }
 
       .header__menu--form {
@@ -439,7 +439,7 @@ footer {
          border: none;
          color: $primary;
          font-weight: bold;
-          font-size: 1.1em;
+         font-size: 1.1em;
        }
      }
     }
@@ -508,7 +508,7 @@ footer {
     grid-row: 2 / 4;
 
     img {
-      width: 30%;
+      width: 50%;
       position: relative;
       top: 30%;
       left: 40%;
@@ -700,11 +700,11 @@ footer {
     p{
       color: $white;
       letter-spacing: 0.15em;
-      font-size: 1.2em;
+      font-size: 0.4em;
       margin: 10px 0 0 10px;
       white-space: nowrap;
       overflow: hidden;
-      width: 40em;
+      width: 35em;
       animation: type 4s steps(60, end);
     }
 
@@ -756,10 +756,10 @@ footer {
     grid-row: 2 / 4;
 
     img {
-      width: 30%;
+      width: 50%;
       position: relative;
       top: 30%;
-      left: 40%;
+      // left: 40%;
       transform: rotate(-45deg);
     }
   }
